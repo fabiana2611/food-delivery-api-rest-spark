@@ -40,7 +40,7 @@ public class UserController {
 			return gson.toJson(userDao.getAll());// send it back to be displayed
 		});
 		
-		get("/users/:id", "application/json", (req, res) -> {
+		get("/users/getUser/:id", "application/json", (req, res) -> {
 			int orderId = Integer.parseInt(req.params("id"));
 			User user = userDao.findById(orderId);
 			if (user == null) {
@@ -52,7 +52,7 @@ public class UserController {
 	}
 	
 	public static void deletes() {
-		delete("/users/:id", (req, res) -> {
+		delete("/users/deleteUser/:id", (req, res) -> {
 			int productId = Integer.parseInt(req.params("id"));
 			userDao.deleteById(productId);
 			res.status(201);

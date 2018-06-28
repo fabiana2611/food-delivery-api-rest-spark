@@ -1,6 +1,6 @@
 swagger: "2.0"
 info:
-  description: "This is a example of an API of food delivery. It is a CRUD usig spark java. "
+  description: "This is a example of an API of food delivery. A CRUD usig spark java. "
   version: "0.0.1"
   title: "Food Delivery API - Spark Study"
   termsOfService: "http://swagger.io/terms/"

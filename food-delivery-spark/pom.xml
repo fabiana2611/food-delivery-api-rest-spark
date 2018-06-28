@@ -58,6 +58,7 @@
 			<version>2.5</version>
 		</dependency>
 		
+		<!-- Documentation -->
 		<dependency>
 		  <groupId>io.swagger</groupId>
 		  <artifactId>swagger-jaxrs</artifactId>

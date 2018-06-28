@@ -51,6 +51,9 @@ public class UserController {
 		});
 	}
 	
+	/**
+	 * Delete user by id
+	 */
 	public static void deletes() {
 		delete("/users/deleteUser/:id", (req, res) -> {
 			int productId = Integer.parseInt(req.params("id"));
